@@ -1,0 +1,3 @@
+useDynLib(nsgmwm)
+importFrom(Rcpp, evalCpp)
+exportPattern("^[[:alpha:]]+")

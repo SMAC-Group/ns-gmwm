@@ -1,0 +1,13 @@
+Package: nsgmwm 
+Type: Package
+Title: Estimation of intertial sensor stochastic characteristics under varying environmental conditions  
+Version: 1.0
+Date: 2018-01-05
+Authors@R: person("Samuel", "Orso", email = "Samuel.Orso@unige.ch", role = c("aut","cre"))
+Maintainer: Who to complain to <Samuel.Orso@unige.ch>
+Description: C++ code for the paper Estimation of intertial sensor stochastic characteristics under varying environmental conditions
+License: GPL-3
+Imports: Rcpp (>= 0.12.12), RcppArmadillo
+LinkingTo: Rcpp, RcppArmadillo
+Suggests: gmwm
+RoxygenNote: 6.0.1
