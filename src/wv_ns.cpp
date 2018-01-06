@@ -418,6 +418,21 @@ arma::mat jac_nu_ar1_eta2_2(
 // ---------------------
 // Objective function dynamic GMWM estimator
 // ---------------------
+//' Objective function for estimating dynamic GMWM parameters
+//' 
+//' @param theta  A vector of parameter
+//' @param nu_hat A matrix of wavelet variances
+//' @param x      A vector of data
+//' @param tau    A vector containing the scales
+//' @param Omega  A matrix of weights
+//' @param WN     A boolean inidicating whether a gaussian White Noise is 
+//' included in the model
+//' @param QN     A boolean inidicating whether a Quantization Noise is included 
+//' in the model
+//' @param AR1    A non-negative integer indicating the number of Autoregressive 
+//' process(es) of order 1 to be included in the model
+//' @return Returns a double $$ \frac{1}{2}\frac{1}{K}\sum_{k=1}^K\lVert\hat{\nu}_k - \nu(\theta,x_k)\rVert^2_{\Omega} $$
+//' @export
 // [[Rcpp::export]]
 double of_dyn(
     arma::vec& theta,
@@ -501,6 +516,21 @@ double of_dyn(
   return of / 0.2e1 / K;
 }
 
+//' Gradient of the objective function for estimating dynamic GMWM parameters
+//' 
+//' @param theta  A vector of parameter
+//' @param nu_hat A matrix of wavelet variances
+//' @param x      A vector of data
+//' @param tau    A vector containing the scales
+//' @param Omega  A matrix of weights
+//' @param WN     A boolean inidicating whether a gaussian White Noise is 
+//' included in the model
+//' @param QN     A boolean inidicating whether a Quantization Noise is included 
+//' in the model
+//' @param AR1    A non-negative integer indicating the number of Autoregressive 
+//' process(es) of order 1 to be included in the model
+//' @return Returns a vector $$ \frac{1}{K}\sum_{k=1}^K(\hat{\nu}_k - \nu(\theta,x_k))\Omega\frac{\partial}{\partial\theta}\nu(\theta,x_k) $$
+//' @export
 // [[Rcpp::export]]
 arma::vec grad_of_dyn(
     arma::vec& theta,
