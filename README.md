@@ -21,5 +21,8 @@ devtools::install_github("SMAC-Group/gmwm")
 ```
 
 ## Usage
-In its actual version, the package has only one functionnality: compute the following objective function $$\frac{1}{2}\frac{1}{K}\sum_{k=1}^K\lVert\hat{\nu}_k - \nu(\theta,x_k)\rVert^2_{\Omega}} $$ and its gradient $$ \frac{1}{K}\sum_{k=1}^K(\hat{\nu}_k - \nu(\theta,x_k))\Omega\frac{\partial}{\partial\theta}\nu(\theta,x_k)$$
+In its actual version, the package has only one functionnality: compute the following objective function
+ \\[ \frac{1}{2}\frac{1}{K}\sum_{k=1}^K\lVert\hat{\nu}_k - \nu(\theta,x_k)\rVert^2_{\Omega}} \\]
+ and its gradient
+\\[ \frac{1}{K}\sum_{k=1}^K(\hat{\nu}_k - \nu(\theta,x_k))\Omega\frac{\partial}{\partial\theta}\nu(\theta,x_k) \\]
 
