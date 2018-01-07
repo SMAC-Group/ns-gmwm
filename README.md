@@ -1,3 +1,5 @@
+[![Travis-CI Build Status](https://travis-ci.org/SMAC-Group/ns-gmwm.svg?branch=master)](https://travis-ci.org/SMAC-Group/ns-gmwm)
+
 # ns-gmwm
 
 This package is in development and is made available for experimental purposes.

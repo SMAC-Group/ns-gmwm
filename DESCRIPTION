@@ -5,8 +5,10 @@ Version: 1.0
 Date: 2018-01-05
 Authors@R: person("Samuel", "Orso", email = "Samuel.Orso@unige.ch", role = c("aut","cre"))
 Maintainer: Who to complain to <Samuel.Orso@unige.ch>
-Description: C++ code for the paper Estimation of intertial sensor stochastic characteristics under varying environmental conditions
-License: GPL-3
+Description: C++ code for the paper Estimation of intertial sensor
+ stochastic characteristics under varying environmental conditions.
+ It extends the estimation of the gmwm package.
+License: GPL-3 | file LICENSE
 URL: https://github.com/SMAC-Group/ns-gmwm
 BugReports: https://github.com/SMAC-Group/ns-gmwm/issues
 Imports: Rcpp (>= 0.12.12), RcppArmadillo
