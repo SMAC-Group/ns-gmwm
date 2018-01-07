@@ -23,7 +23,9 @@ devtools::install_github("SMAC-Group/gmwm")
 ```
 
 ## Usage
-In its actual version, the package has only one functionnality: compute the following objective function
-<a href="https://www.codecogs.com/eqnedit.php?latex=\frac{1}{2}\frac{1}{K}\sum_{k=1}^K\lVert\hat{\nu}_k&space;-&space;\nu(\theta,x_k)\rVert^2_{\Omega}" target="_blank"><img src="https://latex.codecogs.com/png.latex?\frac{1}{2}\frac{1}{K}\sum_{k=1}^K\lVert\hat{\nu}_k&space;-&space;\nu(\theta,x_k)\rVert^2_{\Omega}" title="\frac{1}{2}\frac{1}{K}\sum_{k=1}^K\lVert\hat{\nu}_k - \nu(\theta,x_k)\rVert^2_{\Omega}" /></a>
-and its gradient
+In its actual version, the package has only one functionnality: compute the following objective function   
+<a href="https://www.codecogs.com/eqnedit.php?latex=\frac{1}{2}\frac{1}{K}\sum_{k=1}^K\lVert\hat{\nu}_k&space;-&space;\nu(\theta,x_k)\rVert^2_{\Omega}" target="_blank"><img src="https://latex.codecogs.com/png.latex?\frac{1}{2}\frac{1}{K}\sum_{k=1}^K\lVert\hat{\nu}_k&space;-&space;\nu(\theta,x_k)\rVert^2_{\Omega}" title="\frac{1}{2}\frac{1}{K}\sum_{k=1}^K\lVert\hat{\nu}_k - \nu(\theta,x_k)\rVert^2_{\Omega}" /></a>   
+
+and its gradient     
+
 <a href="https://www.codecogs.com/eqnedit.php?latex=\frac{1}{K}\sum_{k=1}^K\frac{\partial}{\partial\theta^T}\nu(\theta,x_k)\Omega\left[\hat{\nu}_k&space;-&space;\nu(\theta,x_k)\right]^T" target="_blank"><img src="https://latex.codecogs.com/png.latex?\frac{1}{K}\sum_{k=1}^K\frac{\partial}{\partial\theta^T}\nu(\theta,x_k)\Omega\left[\hat{\nu}_k&space;-&space;\nu(\theta,x_k)\right]^T" title="\frac{1}{K}\sum_{k=1}^K\frac{\partial}{\partial\theta^T}\nu(\theta,x_k)\Omega\left[\hat{\nu}_k - \nu(\theta,x_k)\right]^T" /></a>
