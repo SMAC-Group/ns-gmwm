@@ -14,7 +14,7 @@
 #' in the model
 #' @param AR1    A non-negative integer indicating the number of Autoregressive 
 #' process(es) of order 1 to be included in the model
-#' @return Returns a double \deqn{\frac{1}{2}\frac{1}{K}\sum_{k=1}^K\lVert\hat{\nu}_k - \nu(\theta,x_k)\rVert^2_{\Omega}}
+#' @return Returns a double $$\frac{1}{2}\frac{1}{K}\sum_{k=1}^K\lVert\hat{\nu}_k - \nu(\theta,x_k)\rVert^2_{\Omega}$$
 #' @export
 of_dyn <- function(theta, nu_hat, x, tau, Omega, WN, QN, AR1) {
     .Call('_nsgmwm_of_dyn', PACKAGE = 'nsgmwm', theta, nu_hat, x, tau, Omega, WN, QN, AR1)
@@ -33,7 +33,7 @@ of_dyn <- function(theta, nu_hat, x, tau, Omega, WN, QN, AR1) {
 #' in the model
 #' @param AR1    A non-negative integer indicating the number of Autoregressive 
 #' process(es) of order 1 to be included in the model
-#' @return Returns a vector \deqn{\frac{1}{K}\sum_{k=1}^K(\hat{\nu}_k - \nu(\theta,x_k))\Omega\frac{\partial}{\partial\theta}\nu(\theta,x_k)}
+#' @return Returns a vector $$\frac{1}{K}\sum_{k=1}^K(\hat{\nu}_k - \nu(\theta,x_k))\Omega\frac{\partial}{\partial\theta}\nu(\theta,x_k)$$
 #' @export
 grad_of_dyn <- function(theta, nu_hat, x, tau, Omega, WN, QN, AR1) {
     .Call('_nsgmwm_grad_of_dyn', PACKAGE = 'nsgmwm', theta, nu_hat, x, tau, Omega, WN, QN, AR1)
