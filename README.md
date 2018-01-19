@@ -3,7 +3,9 @@
 # ns-gmwm
 
 This package is in development and is made available for experimental purposes.
-It is a minor extension of the `gmwm` package.
+It is a minor extension of the `gmwm` package. It is used for the paper 
+``Estimation of Inertial Sensor Stochastic Characteristics under Varying 
+Environmental Conditions'' by S. Orso, P. Clausen, S. Guerrier, J. Skaloud.
 
 ## Install Instructions
 
@@ -28,4 +30,4 @@ In its actual version, the package has only one functionnality: compute the foll
 
 and its gradient     
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=\frac{1}{K}\sum_{k=1}^K\frac{\partial}{\partial\theta^T}\nu(\theta,x_k)\Omega\left[\hat{\nu}_k&space;-&space;\nu(\theta,x_k)\right]^T" target="_blank"><img src="https://latex.codecogs.com/png.latex?\frac{1}{K}\sum_{k=1}^K\frac{\partial}{\partial\theta^T}\nu(\theta,x_k)\Omega\left[\hat{\nu}_k&space;-&space;\nu(\theta,x_k)\right]^T" title="\frac{1}{K}\sum_{k=1}^K\frac{\partial}{\partial\theta^T}\nu(\theta,x_k)\Omega\left[\hat{\nu}_k - \nu(\theta,x_k)\right]^T" /></a>
+<a href="https://www.codecogs.com/eqnedit.php?latex=\frac{1}{K}\sum_{k=1}^K\frac{\partial}{\partial\theta^T}\nu(\theta,x_k)\Omega[\hat{\nu}_k-\nu(\theta,x_k)]" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\frac{1}{K}\sum_{k=1}^K\frac{\partial}{\partial\theta^T}\nu(\theta,x_k)\Omega[\hat{\nu}_k-\nu(\theta,x_k)]" title="\frac{1}{K}\sum_{k=1}^K\frac{\partial}{\partial\theta^T}\nu(\theta,x_k)\Omega[\hat{\nu}_k-\nu(\theta,x_k)]" /></a>
