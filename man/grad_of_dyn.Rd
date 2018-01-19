@@ -27,7 +27,7 @@ in the model}
 process(es) of order 1 to be included in the model}
 }
 \value{
-Returns a vector $$\frac{1}{K}\sum_{k=1}^K(\hat{\nu}_k - \nu(\theta,x_k))\Omega\frac{\partial}{\partial\theta}\nu(\theta,x_k)$$
+Returns a vector as the gradient of the objective function
 }
 \description{
 Gradient of the objective function for estimating dynamic GMWM parameters
